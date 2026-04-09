@@ -334,6 +334,10 @@ textarea {
   font-size: 0.72rem;
 }
 
+.feature-card .card-index {
+  color: #fff;
+}
+
 .hero-actions,
 .pricing-actions,
 .final-cta-actions {
@@ -630,6 +634,10 @@ textarea {
 
 .pricing-grid--four {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pricing-support {
+  margin-top: 1.2rem;
 }
 
 .pricing-card h3 {
