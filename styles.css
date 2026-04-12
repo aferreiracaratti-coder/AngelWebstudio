@@ -516,8 +516,7 @@ textarea {
 
 .feature-card h3,
 .process-card h3,
-.faq-question,
-.pricing-amount strong {
+.faq-question {
   font-family: var(--font-accent);
 }
 
@@ -674,25 +673,6 @@ textarea {
 
 .pricing-card__intro {
   margin-top: 0.7rem;
-}
-
-.pricing-amount {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.65rem;
-  margin-top: 0.8rem;
-}
-
-.pricing-amount span {
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 0.82rem;
-}
-
-.pricing-amount strong {
-  font-size: clamp(2.6rem, 7vw, 4.4rem);
-  line-height: 1;
 }
 
 .faq-list {
