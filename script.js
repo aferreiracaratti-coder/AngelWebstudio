@@ -1,12 +1,20 @@
 const slides = Array.from(document.querySelectorAll(".hero-slide"));
 let currentSlide = 0;
+const ua = navigator.userAgent || "";
+const isInstagramWebView = /Instagram/i.test(ua);
 
-if (slides.length > 1) {
+if (slides.length > 1 && !isInstagramWebView) {
   window.setInterval(() => {
     slides[currentSlide].classList.remove("is-active");
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].classList.add("is-active");
   }, 4200);
+}
+
+if (isInstagramWebView && slides.length > 1) {
+  slides.forEach((slide, index) => {
+    slide.classList.toggle("is-active", index === 0);
+  });
 }
 
 const navToggle = document.querySelector("[data-nav-toggle]");
@@ -38,7 +46,9 @@ document.querySelectorAll(".faq-item").forEach((item) => {
 
 const revealItems = document.querySelectorAll("[data-reveal]");
 
-if ("IntersectionObserver" in window && revealItems.length) {
+if (isInstagramWebView) {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+} else if ("IntersectionObserver" in window && revealItems.length) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

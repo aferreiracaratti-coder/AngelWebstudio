@@ -816,6 +816,45 @@ textarea {
   display: none;
 }
 
+.ig-webview .site-header {
+  position: relative !important;
+  top: auto !important;
+  background: #0b0b0f !important;
+  border-bottom-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.ig-webview .hero {
+  min-height: auto !important;
+}
+
+.ig-webview .hero-inner {
+  padding-top: 5.2rem;
+}
+
+.ig-webview .hero-slide {
+  transition: none !important;
+}
+
+.ig-webview .hero-slide:not(.is-active) {
+  display: none !important;
+}
+
+.ig-webview .hero-slide img,
+.ig-webview .showcase-card img {
+  filter: none !important;
+}
+
+.ig-webview .marquee-track {
+  animation: none !important;
+  transform: none !important;
+}
+
+.ig-webview [data-reveal] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
 @supports (height: 100dvh) {
   body,
   .hero {
