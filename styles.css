@@ -806,68 +806,16 @@ textarea {
   text-decoration: underline;
 }
 
-.ig-webview .crt-scanlines,
-.ig-webview .hero-overlay,
-.ig-webview .panel-card,
-.ig-webview .site-header {
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  mix-blend-mode: normal !important;
-  filter: none !important;
-}
-
-.ig-webview .crt-scanlines {
-  opacity: 0.08;
-}
-
-.ig-webview .hero,
-.ig-webview body,
-.ig-webview main {
-  background: #0b0b0f !important;
-}
-
-.ig-webview .hero-overlay,
-.ig-webview .crt-scanlines {
-  display: none;
-}
-
-.ig-webview .site-header {
-  position: relative !important;
-  top: auto !important;
-  background: #0b0b0f !important;
-  border-bottom-color: rgba(255, 255, 255, 0.12) !important;
-}
-
-.ig-webview .hero {
-  min-height: auto !important;
-}
-
-.ig-webview .hero-inner {
-  padding-top: 5.2rem;
-}
-
-.ig-webview .hero-slide {
-  transition: none !important;
-}
-
-.ig-webview .hero-slide:not(.is-active) {
+.ig-webview .hero-overlay {
   display: none !important;
 }
 
-.ig-webview .hero-slide img,
-.ig-webview .showcase-card img {
-  filter: none !important;
+.ig-webview .hero-slides {
+  display: none !important;
 }
 
-.ig-webview .marquee-track {
-  animation: none !important;
-  transform: none !important;
-}
-
-.ig-webview [data-reveal] {
-  opacity: 1 !important;
-  transform: none !important;
-  transition: none !important;
+.ig-webview .hero {
+  background: #0b0b0f !important;
 }
 
 @supports (height: 100dvh) {

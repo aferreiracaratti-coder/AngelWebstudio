@@ -46,9 +46,7 @@ document.querySelectorAll(".faq-item").forEach((item) => {
 
 const revealItems = document.querySelectorAll("[data-reveal]");
 
-if (isInstagramWebView) {
-  revealItems.forEach((item) => item.classList.add("is-visible"));
-} else if ("IntersectionObserver" in window && revealItems.length) {
+if ("IntersectionObserver" in window && revealItems.length) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
